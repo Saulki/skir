@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import {
   AppProvider,
   Page,
@@ -70,6 +70,8 @@ function App() {
           url: '/',
           accessibilityLabel: 'Shopify',
         }}
+        showMobileNavigation={mobileNavigationActive}
+        onNavigationDismiss={handleMobileNavigationToggle}
       >
         <Page title="Welcome to Polaris">
           <Card>

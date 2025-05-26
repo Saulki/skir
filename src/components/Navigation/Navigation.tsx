@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navigation } from '@shopify/polaris';
 import {
   HomeIcon,

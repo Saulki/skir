@@ -9,7 +9,7 @@ interface TopBarProps {
   onSearchChange: (value: string) => void;
   onUserMenuToggle: () => void;
   onNotificationsToggle: () => void;
-//  onNavigationToggle: () => void;
+  onNavigationToggle: () => void;
 }
 
 export function TopBar({
@@ -19,7 +19,7 @@ export function TopBar({
   onSearchChange,
   onUserMenuToggle,
   onNotificationsToggle,
- // onNavigationToggle,
+  onNavigationToggle,
 }: TopBarProps) {
   const userMenuActions = [
     {
@@ -76,7 +76,7 @@ export function TopBar({
       searchField={searchFieldMarkup}
       secondaryMenu={secondaryMenuMarkup}
       searchResults={searchResultsMarkup}
-//      onNavigationToggle={onNavigationToggle}
+      onNavigationToggle={onNavigationToggle}
     />
   );
 } 
